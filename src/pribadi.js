@@ -20,7 +20,7 @@ const Perorangan = () => {
         });
 
         try {
-            const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/lombaindividu`, {
+            const response = await axios.post('https://backendprojectakhir-production-2d5b.up.railway.app/lombaindividu', {
                 bidang_lomba: data.get('lomba'),
                 nama: data.get('nama'),
                 nim: data.get('nim'),
