@@ -4,7 +4,7 @@ import axios from 'axios';
 
 
 const Register = () => {
-    const navigate = useNavigate();
+    const Navigate = useNavigate();
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -16,7 +16,7 @@ const Register = () => {
         });
 
     try {
-        const response = await axios.post('http://localhost:3000/daftar', {
+        const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/register`, {
             username: data.get('username'),
             email: data.get('email'),
             password: data.get('password')
@@ -35,19 +35,20 @@ return (
                 <form>
                     <h1 className="pt-[35px] pr-[35px] pb-0 pl-[35px] m-1 font-bold align-center flex justify-center text-5xl">SPARTA FEST</h1>
                     <h2 className="pt-[0px] pr-[35px] pb-0 pl-[35px] m-4 font-bold align-center flex justify-center text-5xl">Register</h2>
-                    <div className="content p-9 align-center">
+                    <div className="content p-9 align-center" onSubmit={handleSubmit}>
                         <div className="input-field py-[12px] px-[5px]">
-                            <input className="text-base block w-full h-[60px] py-[10px] px-[20px] border-4 border-b-2 outline-none rounded-3xl mb-[30px]" type="text" placeholder="Username" autocomplete="nope" required />
+                            <input className="text-base block w-full h-[60px] py-[10px] px-[20px] border-4 border-b-2 outline-none rounded-3xl mb-[30px]" type="text" placeholder="Username" autocomplete="username" id="username" name="usernmae" required />
                         </div>
                         <div className="input-field py-[12px] px-[5px]">
-                            <input className="text-base block w-full h-[60px] py-[10px] px-[20px] border-4 border-b-2 outline-none rounded-3xl mb-[30px]" type="email" placeholder="Email" autocomplete="nope" required />
+                            <input className="text-base block w-full h-[60px] py-[10px] px-[20px] border-4 border-b-2 outline-none rounded-3xl mb-[30px]" type="email" placeholder="Email" autocomplete="nope" id="email" name="email" required />
                         </div>
                         <div className="input-field py-[12px] px-[5px]">
-                            <input className="text-base block w-full h-[60px] py-[10px] px-[20px] border-4 border-b-2 outline-none rounded-3xl" type="password" placeholder="Password" autocomplete="new-password" required />
+                            <input className="text-base block w-full h-[60px] py-[10px] px-[20px] border-4 border-b-2 outline-none rounded-3xl" type="password" placeholder="Password" autocomplete="new-password" id="password" name="password" required />
                         </div>
                     </div>
                     <div >
-                        <button className="action w-48 border p-4 cursor-pointer uppercase bg-cyan-200 hover:bg-cyan-700 text-zinc-400 outline-none border-b-[4px] border-l-[4px] border-r-[0px] rounded-[20px] translate-x-[250px] translate-y-[30px]" onClick={() => { navigate('/') }}>Daftar</button>
+                    {/* onClick={() => { navigate('/') }} */}
+                        <button className="action w-48 border p-4 cursor-pointer uppercase bg-cyan-200 hover:bg-cyan-700 text-zinc-400 outline-none border-b-[4px] border-l-[4px] border-r-[0px] rounded-[20px] translate-x-[250px] translate-y-[30px]" type="submit">Daftar</button>
                     </div>
                 </form>
             </div>

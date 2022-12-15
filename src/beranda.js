@@ -27,10 +27,33 @@ import luthfi from './image/luthfi.JPG'
 import reza from './image/reza.JPG'
 import { useNavigate } from "react-router-dom";
 import ScrollToTop from "react-scroll-to-top";
+import axios from "axios";
 
 
 const Beranda = () => {
     const navigate = useNavigate();
+    const [isLogin, setIsLogin] = React.useState(false)
+    React.useEffect(()=> {
+        let username = localStorage.getItem('username')
+        let id = localStorage.getItem('id')
+        let email = localStorage.getItem('email')
+        let token = localStorage.getItem('token')
+
+        const verifikasi = async() => {
+            try {
+                const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/verify`, {token : localStorage.getItem('token')})
+                console.log(localStorage.getItem('token'))
+                if (response.status == 200){
+                    setIsLogin(true)
+                } else {
+                    navigate('/login')
+                }
+            } catch (error) {
+                console.log(error)
+            }
+        }
+        verifikasi()
+    }, []);
     return (
         <div className="body">
             <ScrollToTop
