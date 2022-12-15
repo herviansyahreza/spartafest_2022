@@ -14,7 +14,7 @@ const Login = () => {
         });
 
         try{
-            const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/login`, {
+            const response = await axios.post('https://backendprojectakhir-production.up.railway.app/login', {
               email: data.get('email'),
               password: data.get('password')
             })
