@@ -23,7 +23,7 @@ const Register = () => {
                             </div>
                         </div>
                         <div >
-                            <button className="action w-48 border p-4 cursor-pointer uppercase bg-cyan-200 hover:bg-cyan-700 text-zinc-400 outline-none border-b-[4px] border-l-[4px] border-r-[0px] rounded-[20px] translate-x-[250px] translate-y-[30px]">Daftar</button>
+                            <button className="action w-48 border p-4 cursor-pointer uppercase bg-cyan-200 hover:bg-cyan-700 text-zinc-400 outline-none border-b-[4px] border-l-[4px] border-r-[0px] rounded-[20px] translate-x-[250px] translate-y-[30px]" onClick={()=>{navigate('/login')}}>Daftar</button>
                         </div>
                     </form>
                 </div>
