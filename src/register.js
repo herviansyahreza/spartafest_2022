@@ -16,7 +16,7 @@ const Register = () => {
         });
 
     try {
-        const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/register`, {
+        const response = await axios.post('http://backendprojectakhir-production.up.railway.app/register' , {
             username: data.get('username'),
             email: data.get('email'),
             password: data.get('password')
