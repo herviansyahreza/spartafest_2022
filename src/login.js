@@ -25,7 +25,7 @@ const Login = () => {
             localStorage.setItem('name', response.data.username)
             localStorage.setItem('email', response.data.email)
     
-            Navigate('/beranda')
+            Navigate('../beranda')
           } catch (error){
             alert('Login Gagal !!')
           }
