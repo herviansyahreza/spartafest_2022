@@ -16,7 +16,7 @@ const Perorangan = () => {
             email: data.get('email'),
             asal_universitas: data.get('asal_universitas'),
             alamat: data.get('alamat'),
-            ktm: base64String,
+//             ktm: base64String,
         });
 
         try {
