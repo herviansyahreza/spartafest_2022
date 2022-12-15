@@ -45,13 +45,14 @@ const Login = () => {
                         <div className="input-field py-[12px] px-[5px]">
                             <input className="text-base block w-full h-[60px] py-[10px] px-[20px] border-4 border-b-2 outline-none rounded-3xl" type="password" placeholder="Password" autocomplete="new-password" id="password" name="password"/>
                         </div>
-                    </div>
-                    <div >
-                        <button className="action w-48 border p-4 cursor-pointer uppercase bg-cyan-200 hover:bg-cyan-700 text-zinc-400 outline-none border-b-[4px] border-l-[4px] border-r-[0px] rounded-[20px] translate-x-[100px] translate-y-[30px] " type="submit">Masuk</button>
+                         <button className="action w-48 border p-4 cursor-pointer uppercase bg-cyan-200 hover:bg-cyan-700 text-zinc-400 outline-none border-b-[4px] border-l-[4px] border-r-[0px] rounded-[20px] translate-x-[100px] translate-y-[30px] " type="submit">Masuk</button>
                         
                        
                         <button className="action w-48 border p-4 cursor-pointer uppercase bg-cyan-200 hover:bg-cyan-700 text-zinc-400 outline-none border-b-[4px] border-l-[4px] border-r-[0px] rounded-[20px] translate-x-[220px] translate-y-[30px]" onClick={()=>{Navigate('/daftar')}}>Daftar</button>
                        
+                    </div>
+                    <div >
+                        
                     </div>
                 </form>
             </div>
