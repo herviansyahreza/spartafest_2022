@@ -28,7 +28,6 @@ const Perorangan = () => {
                 asal_universitas: data.get('asal_universitas'),
                 kontak: data.get('kontak'),
                 alamat: data.get('alamat'),
-                ktm: base64String,
             });
 
             Navigate('/berhasil')
@@ -36,25 +35,25 @@ const Perorangan = () => {
             alert('Register Gagal');
         }
     };
-    let base64String = "";
-    const uploaded = () => {
-        let file = document.querySelector(
-            'input[type=file]')['files'][0];
-        let reader = new FileReader();
-        reader.onload = function () {
-            base64String = reader.result.replace("data:", "")
-                .replace(/^.+,/, "");
-            // imageBase64Stringsep = base64String;
-        }
-        reader.readAsDataURL(file);
-    }
+    // let base64String = "";
+    // const uploaded = () => {
+    //     let file = document.querySelector(
+    //         'input[type=file]')['files'][0];
+    //     let reader = new FileReader();
+    //     reader.onload = function () {
+    //         base64String = reader.result.replace("data:", "")
+    //             .replace(/^.+,/, "");
+    //         // imageBase64Stringsep = base64String;
+    //     }
+    //     reader.readAsDataURL(file);
+    // }
     return (
         <div className="kelompok p-0 m-0 outline-none box-border h-full w-full mb-[30px] flex justify-center align-center bg-emerald-900">
             <div className="form m-[40px] w-2/3 p-[20px] border-2 rounded-3xl bg-cyan-400" action="">
                 <h1 className="text-center pl-[20px] text-4xl font-bold mb-[10px] mt-[30px]">Pendaftaran Sparta Fest 2022</h1>
                 <section class="content mt-[50px] m-[50px] p-[40px]">
-                    <from>
-                        <div class="ketua" onSubmit={handleSubmit}>
+                    <from onSubmit={handleSubmit}>
+                        <div class="ketua" >
                             <label className="text-left text-bold text-xl mb-[10px]" for=""><b>Bidang Perlombaan</b></label>
                             <select className="w-full py-[15px] px-[10px] mb-[10px] bg-transparent border-b-[2px] text-black text-xl " name="lomba" id="lomba" required>
                                 <option value="">Pilih Perlombaan</option>
@@ -83,19 +82,12 @@ const Perorangan = () => {
                             <label className="text-left text-bold text-xl translate-y-[20px]" for=""><b>Alamat</b></label><br />
                             <textarea className="w-full py-[15px] px-[10px] mb-[10px] bg-transparent border-b-[2px] text-black text-xl " type="text" name="alamat" placeholder="Alamat Lengkap" id="alamat" cols="20" rows="1" required></textarea><br />
 
-                            <label className="text-left text-bold text-xl translate-y-[20px]" for=""><b>Kartu Mahasiswa / Kartu Pelajar</b></label><br />
-                            <input className="w-full py-[15px] px-[10px] mb-[10px] bg-transparent border-b-[2px] text-black text-xl " type="file" name="ktm" id="ktm" onChange={uploaded} required /><br />
+                            {/* <label className="text-left text-bold text-xl translate-y-[20px]" for=""><b>Kartu Mahasiswa / Kartu Pelajar</b></label><br />
+                            <input className="w-full py-[15px] px-[10px] mb-[10px] bg-transparent border-b-[2px] text-black text-xl " type="file" name="ktm" id="ktm" onChange={uploaded} required /><br /> */}
                             <button class="button-33 bg-green-400 rounded-[100px] cursor-pointer py-[7px] px-[20px] inline-block text-center decoration-none touch-manipulation w-[130px] h-[50px] hover:bg-green-500 mt-[30px] " type="submit">Kirimkan</button>
                         </div>
                     </from>
-
-                   
-
                 </section>
-
-
-
-
             </div>
         </div>
     )
