@@ -22,7 +22,7 @@ const Register = () => {
             password: data.get('password')
         })
 
-        Navigate('../login')
+        Navigate('../')
     } catch (error) {
         alert('Register Gagal');
     }
