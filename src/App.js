@@ -15,7 +15,7 @@ function App() {
         <Routes>
           <Route exact path='/' element={<Login />} />
           <Route exact path='/beranda' element={<Beranda />} />
-          <Route exact path='/daftar' element={<Register />} />
+          <Route exact path='/register' element={<Register />} />
           <Route exact path='/perorangan' element={<Perorangan />} />
           <Route exact path='/kelompok' element={<Kelompok />} />
           <Route exact path='/berhasil' element={<Berhasil />} />
