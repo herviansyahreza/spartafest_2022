@@ -37,7 +37,7 @@ return (
                     <h2 className="pt-[0px] pr-[35px] pb-0 pl-[35px] m-4 font-bold align-center flex justify-center text-5xl">Register</h2>
                     <div className="content p-9 align-center" onSubmit={handleSubmit}>
                         <div className="input-field py-[12px] px-[5px]">
-                            <input className="text-base block w-full h-[60px] py-[10px] px-[20px] border-4 border-b-2 outline-none rounded-3xl mb-[30px]" type="text" placeholder="Username" autocomplete="username" id="username" name="usernmae" required />
+                            <input className="text-base block w-full h-[60px] py-[10px] px-[20px] border-4 border-b-2 outline-none rounded-3xl mb-[30px]" type="text" placeholder="Username" autocomplete="username" id="username" name="username" required />
                         </div>
                         <div className="input-field py-[12px] px-[5px]">
                             <input className="text-base block w-full h-[60px] py-[10px] px-[20px] border-4 border-b-2 outline-none rounded-3xl mb-[30px]" type="email" placeholder="Email" autocomplete="nope" id="email" name="email" required />
