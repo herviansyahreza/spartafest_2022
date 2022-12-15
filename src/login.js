@@ -48,7 +48,7 @@ const Login = () => {
                          <button className="action w-48 border p-4 cursor-pointer uppercase bg-cyan-200 hover:bg-cyan-700 text-zinc-400 outline-none border-b-[4px] border-l-[4px] border-r-[0px] rounded-[20px] translate-x-[100px] translate-y-[30px] " type="submit">Masuk</button>
                         
                        
-                        <button className="action w-48 border p-4 cursor-pointer uppercase bg-cyan-200 hover:bg-cyan-700 text-zinc-400 outline-none border-b-[4px] border-l-[4px] border-r-[0px] rounded-[20px] translate-x-[220px] translate-y-[30px]" onClick={()=>{Navigate('/daftar')}}>Daftar</button>
+                        <button className="action w-48 border p-4 cursor-pointer uppercase bg-cyan-200 hover:bg-cyan-700 text-zinc-400 outline-none border-b-[4px] border-l-[4px] border-r-[0px] rounded-[20px] translate-x-[220px] translate-y-[30px]" onClick={()=>{Navigate('/register')}}>Daftar</button>
                        
                     </div>
                     <div >
