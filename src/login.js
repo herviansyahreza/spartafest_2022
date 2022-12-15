@@ -1,9 +1,36 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const Login = () => {
     const navigate = useNavigate();
+
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        const data = new FormData(event.currentTarget);
+        console.log({
+          email: data.get('email'),
+          password: data.get('password'),
+        });
+
+        try{
+            const response = await axios.post('http://localhost:3000/login', {
+              email: data.get('email'),
+              password: data.get('password')
+            })
+            console.log(response)
+    
+            localStorage.setItem('token', response.data.token)
+            localStorage.setItem('id', response.data.id)
+            localStorage.setItem('name', response.data.username)
+            localStorage.setItem('email', response.data.email)
+    
+            Navigate('/beranda')
+          } catch (error){
+            alert('Login Gagal !!')
+          }
+        };
 
     return (
         <div className="bg-emerald-900 h-screen overflow-hidden ">
