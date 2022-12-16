@@ -54,6 +54,20 @@ const Beranda = () => {
         }
         verifikasi()
     }, []);
+
+    const handleLogout = async () => {
+        localStorage.removeItem('user');
+        localStorage.removeItem('email_ketua');
+        localStorage.removeItem('email_satu');
+        localStorage.removeItem('email_dua')
+
+        await axios.post(`https://backendspartafest-production.up.railway.app/logout`,{
+            token: localStorage.getItem('token')
+        }).then((_res) => {
+            alert('Logout Success');
+        })
+        window.location.href = './login';
+    }
     return (
         <div className="body">
             <ScrollToTop
@@ -97,7 +111,7 @@ const Beranda = () => {
                         Daftar Kelompok
                     </span>
                 </button>
-                <button class="button-82-pushable" role="button" id="tombolkeluar" onClick={() => { navigate('/') }}>
+                <button class="button-82-pushable" role="button" id="tombolkeluar" onClick={handleLogout}>
                     <span class="button-82-shadow"></span>
                     <span class="button-82-edge"></span>
                     <span class="button-82-front text">
