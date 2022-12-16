@@ -59,7 +59,7 @@ const Beranda = () => {
             email: localStorage.getItem('email')
         });
         console.log(response)
-        if(response == "terdaftar") {
+        if(response.data.cek == "terdaftar") {
             navigate('/berhasil')
         } else {
             navigate('/perorangan')
