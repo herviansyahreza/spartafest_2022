@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Beranda from "./beranda"
-import Kelompok from "./kelompok"
 import Login from "./login"
 import Perorangan from "./pribadi"
 import Register from "./register"
@@ -23,7 +22,6 @@ function App() {
           <Route exact path='/beranda' element={<Beranda />} />
           <Route exact path='/register' element={<Register />} />
           <Route exact path='/perorangan' element={<Perorangan />} />
-          <Route exact path='/kelompok' element={<Kelompok />} />
           <Route exact path='/ketua' element={<Ketua />} />
           <Route exact path='/anggotasatu' element={<AnggotaSatu />} />
           <Route exact path='/anggotadua' element={<AnggotaDua />} />
