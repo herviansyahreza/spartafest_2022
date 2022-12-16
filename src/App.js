@@ -6,6 +6,7 @@ import Login from "./login"
 import Perorangan from "./pribadi"
 import Register from "./register"
 import Berhasil from './berhasil';
+import Ketua from './ketua';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
           <Route exact path='/register' element={<Register />} />
           <Route exact path='/perorangan' element={<Perorangan />} />
           <Route exact path='/kelompok' element={<Kelompok />} />
+          <Route exact path='/ketua' element={<Ketua />} />
           <Route exact path='/berhasil' element={<Berhasil />} />
         </Routes>
       </BrowserRouter>

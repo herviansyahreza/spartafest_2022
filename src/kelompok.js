@@ -93,20 +93,6 @@ const Kelompok = () => {
             alert('Register Gagal');
         }
     };
-    // let base64String = "";
-    // const uploaded = () => {
-    //     let file = document.querySelector(
-    //         'input[type=file]')['files'][0];
-    //     let reader = new FileReader();
-    //     reader.onload = function () {
-    //         base64String = reader.result.replace("data:", "")
-    //             .replace(/^.+,/, "");
-    //         // imageBase64Stringsep = base64String;
-    //     }
-    //     reader.readAsDataURL(file);
-    // }
-
-
     return (
         <div className="kelompok p-0 m-0 outline-none box-border h-full w-full mb-[30px] flex justify-center align-center bg-emerald-900">
             <div className="form m-[40px] w-2/3 p-[20px] border-2 rounded-3xl bg-cyan-400" action="">
