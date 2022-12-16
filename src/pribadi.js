@@ -81,12 +81,12 @@ const Perorangan = () => {
 
                             <label className="text-left text-bold text-xl translate-y-[20px]" for=""><b>Alamat</b></label><br />
                             <textarea className="w-full py-[15px] px-[10px] mb-[10px] bg-transparent border-b-[2px] text-black text-xl " type="text" name="alamat" placeholder="Alamat Lengkap" id="alamat" cols="20" rows="1" required></textarea><br />
-
+                            <button class="button-33 bg-green-400 rounded-[100px] cursor-pointer py-[7px] px-[20px] inline-block text-center decoration-none touch-manipulation w-[130px] h-[50px] hover:bg-green-500 mt-[30px] " type="submit">Kirimkan</button>
                             {/* <label className="text-left text-bold text-xl translate-y-[20px]" for=""><b>Kartu Mahasiswa / Kartu Pelajar</b></label><br />
                             <input className="w-full py-[15px] px-[10px] mb-[10px] bg-transparent border-b-[2px] text-black text-xl " type="file" name="ktm" id="ktm" onChange={uploaded} required /><br /> */}
                             
                         </div>
-                            <button class="button-33 bg-green-400 rounded-[100px] cursor-pointer py-[7px] px-[20px] inline-block text-center decoration-none touch-manipulation w-[130px] h-[50px] hover:bg-green-500 mt-[30px] " type="submit">Kirimkan</button>
+                            
                     </from>
                 </section>
             </div>
