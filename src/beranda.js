@@ -46,7 +46,7 @@ const Beranda = () => {
                 if (response.status == 200){
                     setIsLogin(true)
                 } else {
-                    navigate('/login')
+                    navigate('/')
                 }
             } catch (error) {
                 console.log(error)
