@@ -58,8 +58,8 @@ const Beranda = () => {
         const response = await axios.post(`https://backendspartafest-production.up.railway.app/cekdaftar`,{
             email: localStorage.getItem('email')
         });
-        alert(response.cek)
-        if(response.cek == "terdaftar") {
+        alert(response.cek.cek_daftar)
+        if(response.cek.cek_daftar == "terdaftar") {
             navigate('/berhasil')
         } else {
             navigate('/perorangan')
