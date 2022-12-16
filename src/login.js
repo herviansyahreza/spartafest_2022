@@ -14,7 +14,7 @@ const Login = () => {
         });
 
         try{
-            const response = await axios.post('https://backendprojectakhir-production-2d5b.up.railway.app/login', {
+            const response = await axios.post('https://backendspartafest-production.up.railway.app/login', {
               email: data.get('email'),
               password: data.get('password')
             })

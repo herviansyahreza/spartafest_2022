@@ -27,7 +27,7 @@ const Kelompok = () => {
         });
 
         try {
-            const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/lombakelompok`, {
+            const response = await axios.post(`https://backendspartafest-production.up.railway.app/lombakelompok`, {
                 bidang_lomba: data.get('lomba'),
                 nama_team: data.get('nama_team'),
                 nim: data.get('nim'),

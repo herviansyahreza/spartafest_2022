@@ -16,7 +16,7 @@ const Register = () => {
         });
 
     try {
-        const response = await axios.post('https://backendprojectakhir-production-2d5b.up.railway.app/register' , {
+        const response = await axios.post('https://backendspartafest-production.up.railway.app/register' , {
             username: data.get('username'),
             email: data.get('email'),
             password: data.get('password')
