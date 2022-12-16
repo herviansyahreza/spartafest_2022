@@ -16,13 +16,13 @@ const Ketua = () => {
         });
 
         try {
-            const response = await axios.post(`https://backendspartafest-production.up.railway.app/insertanggotasatu`, {
+            const response = await axios.post(`https://backendspartafest-production.up.railway.app/insertketua`, {
                 nim: data.get('nim'),
                 ketua: data.get('ketua'),
                 email: data.get('email'),
                 asal_universitas: data.get('asal_universitas'),
             });
-            alert("anggota terupdate")
+            localStorage.setItem('email_ketua', data.get('email'))
             Navigate('/anggotasatu')
         } catch (error) {
             Navigate('/kelompok')
@@ -46,7 +46,8 @@ const Ketua = () => {
                             <input className="w-full py-[15px] px-[10px] mb-[10px] bg-transparent border-b-[2px] text-black text-xl " type="email" placeholder="Email ketua" name="email" id="email" /><br />
 
                             <label className="text-left text-bold text-xl" for=""><b>Asal Universitas</b></label><br />
-                            <input className="w-full py-[15px] px-[10px] mb-[10px] bg-transparent border-b-[2px] text-black text-xl " type="text" placeholder="Universitas" name="asal_universitas" id="asal_universitas" required /><br />   
+                            <input className="w-full py-[15px] px-[10px] mb-[10px] bg-transparent border-b-[2px] text-black text-xl " type="text" placeholder="Universitas" name="asal_universitas" id="asal_universitas" required /><br />
+                            <button class="button-33 bg-green-400 rounded-[100px] cursor-pointer py-[7px] px-[20px] inline-block text-center decoration-none touch-manipulation w-[130px] h-[50px] hover:bg-green-500 mt-[30px] " type="submit">Kirimkan</button>  
                         </div>
                     </form>         
                 </section>
