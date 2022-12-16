@@ -24,22 +24,9 @@ const Kelompok = () => {
             nim_dua: data.get('nim_dua'),
             email_dua: data.get('email_dua'),
         });
-        const insertanggotasatu = async () => {
-            await axios.post(`https://backendspartafest-production.up.railway.app/insertanggotasatu`, {
-                nama_satu: data.get('nama_satu'),
-                nim_satu: data.get('nim_satu'),
-                email_satu: data.get('email_satu'),
-            });
-        }
-        const insertanggotadua =async () => {
-            await axios.post(`https://backendspartafest-production.up.railway.app/insertanggotadua`, {
-                nama_dua: data.get('nama_dua'),
-                nim_dua: data.get('nim_dua'),
-                email_dua: data.get('email_dua'),
-            });
-        }
-        const lombakelompok = async () => {
-            await axios.post(`https://backendspartafest-production.up.railway.app/lombakelompok`, {
+
+        try {
+            const response = await axios.post(`https://backendspartafest-production.up.railway.app/lombakelompok`, {
                 bidang_lomba: data.get('lomba'),
                 nama_team: data.get('nama_team'),
                 nim: data.get('nim'),
@@ -49,13 +36,13 @@ const Kelompok = () => {
                 kontak: data.get('kontak'),
                 alamat: data.get('alamat'),
                 nama_satu: data.get('nama_satu'),
+                nim_satu: data.get('nim_satu'),
+                email_satu: data.get('email_satu'),
                 nama_dua: data.get('nama_dua'),
+                nim_dua: data.get('nim_dua'),
+                email_dua: data.get('email_dua'),
             });
-        }
-        try {
-            insertanggotasatu();
-            insertanggotadua();
-            lombakelompok();
+
             Navigate('/berhasil')
         } catch (error) {
             Navigate('/kelompok')
