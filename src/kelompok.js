@@ -47,6 +47,7 @@ const Kelompok = () => {
 
             Navigate('/berhasil')
         } catch (error) {
+            Navigate('/kelompok')
             alert('Register Gagal');
         }
     };
