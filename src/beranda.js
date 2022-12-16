@@ -41,7 +41,7 @@ const Beranda = () => {
 
         const verifikasi = async() => {
             try {
-                const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/verify`, {token : localStorage.getItem('token')})
+                const response = await axios.post(`https://backendprojectakhir-production-2d5b.up.railway.app/verify`, {token : localStorage.getItem('token')})
                 console.log(localStorage.getItem('token'))
                 if (response.status == 200){
                     setIsLogin(true)
