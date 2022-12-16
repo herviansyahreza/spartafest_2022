@@ -97,6 +97,14 @@ const Beranda = () => {
                         Daftar Kelompok
                     </span>
                 </button>
+                <button class="button-82-pushable" role="button" id="tombolkeluar" onClick={() => { navigate('/') }}>
+                    <span class="button-82-shadow"></span>
+                    <span class="button-82-edge"></span>
+                    <span class="button-82-front text">
+                        Keluar
+                    </span>
+                </button>
+
                 <img src={leaf} id="leaf" />
                 <img src={plant} id="plant" />
             </section>
@@ -122,7 +130,7 @@ const Beranda = () => {
                                     Republik Indonesia.
                                 </p>
                                 <div class="more">
-                                    <a href="#" class="read-more">Read <span>More</span></a>
+                                    <a href="https://drive.google.com/uc?id=1lO8mUKzHDU0o2yf84tFerVMAsw3n8P-D&export=download" class="read-more">Read <span>More</span></a>
                                 </div>
                             </div>
                         </div>
@@ -138,7 +146,7 @@ const Beranda = () => {
                                     Republik Indonesia.
                                 </p>
                                 <div class="more">
-                                    <a href="#" class="read-more">Read <span>More</span></a>
+                                    <a href="https://drive.google.com/uc?id=1y6QbUClgdNoCBWSbJq4GAMSUlMiBrPh3&export=download" class="read-more">Read <span>More</span></a>
                                 </div>
                             </div>
                         </div>
@@ -154,7 +162,7 @@ const Beranda = () => {
                                     Republik Indonesia.
                                 </p>
                                 <div class="more">
-                                    <a href="#" class="read-more">Read <span>More</span></a>
+                                <a href="https://drive.google.com/uc?id=1oSrtLx5bMyeERXrYO99rA_d7aYKAp4K7&export=download" class="read-more">Read <span>More</span></a>
                                 </div>
                             </div>
                         </div>
@@ -173,7 +181,7 @@ const Beranda = () => {
                                     Republik Indonesia.
                                 </p>
                                 <div class="more">
-                                    <a href="#" class="read-more">Read <span>More</span></a>
+                                <a href="https://drive.google.com/uc?id=1vrvONQ2Cc_O7ii3uyJdjPbxUbd1jHkBP&export=download" class="read-more">Read <span>More</span></a>
                                 </div>
                             </div>
                         </div>
@@ -189,7 +197,7 @@ const Beranda = () => {
                                     Republik Indonesia.
                                 </p>
                                 <div class="more">
-                                    <a href="#" class="read-more">Read <span>More</span></a>
+                                <a href="https://drive.google.com/uc?id=1oeyxYBn2VhHPGA_PlgmvClk1zc26esq0&export=download" class="read-more">Read <span>More</span></a>
                                 </div>
                             </div>
                         </div>
@@ -205,7 +213,7 @@ const Beranda = () => {
                                     Republik Indonesia.
                                 </p>
                                 <div class="more">
-                                    <a href="#" class="read-more">Read <span>More</span></a>
+                                <a href="https://drive.google.com/uc?id=1NpzjUPJjX5wkU7TNfr6k0Wa1AYN1Hox9&export=download" class="read-more">Read <span>More</span></a>
                                 </div>
                             </div>
                         </div>
@@ -233,7 +241,7 @@ const Beranda = () => {
                                     Republik Indonesia.
                                 </p>
                                 <div class="more">
-                                    <a href="#" class="read-more">Read <span>More</span></a>
+                                <a href="https://drive.google.com/uc?id=1MtiIilYi38W0eHmjtUD5FTcf2xqGGzlq&export=download" class="read-more">Read <span>More</span></a>
                                 </div>
                             </div>
                         </div>
@@ -249,7 +257,7 @@ const Beranda = () => {
                                     Republik Indonesia.
                                 </p>
                                 <div class="more">
-                                    <a href="#" class="read-more">Read <span>More</span></a>
+                                <a href="https://drive.google.com/uc?id=1geAay_eLkwhEX4kKLWufJyLrnAkeBP7e&export=download" class="read-more">Read <span>More</span></a>
                                 </div>
                             </div>
                         </div>
@@ -265,7 +273,7 @@ const Beranda = () => {
                                     Republik Indonesia.
                                 </p>
                                 <div class="more">
-                                    <a href="#" class="read-more">Read <span>More</span></a>
+                                <a href="https://drive.google.com/uc?id=1Rtri0YDcKvpLdoHsRbERtb2oC9n2jPwa&export=download" class="read-more">Read <span>More</span></a>
                                 </div>
                             </div>
                         </div>
@@ -293,7 +301,7 @@ const Beranda = () => {
 
                                 </p>
                                 <div class="more">
-                                    <a href="#" class="read-more">Read <span>More</span></a>
+                                <a href="https://drive.google.com/uc?id=1--aMyii4LURRw8TbWtYj1EHS9OWFgagN&export=download" class="read-more">Read <span>More</span></a>
                                 </div>
                             </div>
                         </div>
@@ -309,7 +317,7 @@ const Beranda = () => {
                                     Republik Indonesia.
                                 </p>
                                 <div class="more">
-                                    <a href="#" class="read-more">Read <span>More</span></a>
+                                <a href="https://drive.google.com/uc?id=1FPI-OSGEhfdeAWkaT8kT_v8l2SH9u4zm&export=download" class="read-more">Read <span>More</span></a>
                                 </div>
                             </div>
                         </div>
@@ -325,7 +333,7 @@ const Beranda = () => {
 
                                 </p>
                                 <div class="more">
-                                    <a href="#" class="read-more">Read <span>More</span></a>
+                                <a href="https://drive.google.com/uc?id=1Uwv4QfdCDl9hQmZuHXPg38Dt4MHolVsX&export=download" class="read-more">Read <span>More</span></a>
                                 </div>
                             </div>
                         </div>
@@ -345,7 +353,7 @@ const Beranda = () => {
                                     <img src={deni} alt="" />
                                 </div>
                                 <div class="contentbox">
-                                    <h3>Alfiano Deni<br /><span>Full-Stack Developer</span></h3>
+                                <h3>Alfiano Deni<br /><span>Full-Stack Developer</span><br /><span>0822-xxxx-xxxx</span><br /><span><a href="https://t.me/alfiano_deni">Click Here !</a></span></h3>
                                 </div>
                             </div>
                         </div>
@@ -356,7 +364,7 @@ const Beranda = () => {
                                     <img src={luthfi} alt="" />
                                 </div>
                                 <div class="contentbox">
-                                    <h3>Fahrianda Luthfi<br /><span>Front-End Developer</span></h3>
+                                <h3>Fahrianda Luthfi<br /><span>Front-End Developer</span><br /><span>0823-xxxx-xxxx</span><br /><span><a href="https://t.me/enumeration91">Click Here !</a></span></h3>
                                 </div>
                             </div>
 
@@ -368,7 +376,7 @@ const Beranda = () => {
                                     <img src={reza} alt="" />
                                 </div>
                                 <div class="contentbox">
-                                    <h3>Reza Herviansyah<br /><span>Back-End Developer</span></h3>
+                                <h3>Reza Herviansyah<br /><span>Back-End Developer</span><br /><span>0853-xxxx-xxxx</span><br /><span><a href="https://t.me/herviansyahreza">Click Here !</a></span></h3>
                                 </div>
                             </div>
 
