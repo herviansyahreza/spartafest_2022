@@ -43,7 +43,7 @@ const Kelompok = () => {
                 // email_dua: data.get('email_dua'),
             });
 
-            // Navigate('/berhasil')
+            Navigate('/berhasil')
         } catch (error) {
             Navigate('/kelompok')
             alert('Register Gagal');
@@ -53,14 +53,14 @@ const Kelompok = () => {
         event.preventDefault();
         const data = new FormData(event.currentTarget);
         console.log({
-            bidang_lomba: data.get('lomba'),
-            nama_team: data.get('nama_team'),
-            nim: data.get('nim'),
-            ketua: data.get('ketua'),
-            email: data.get('email'),
-            asal_universitas: data.get('asal_universitas'),
-            kontak: data.get('kontak'),
-            alamat: data.get('alamat'),
+            // bidang_lomba: data.get('lomba'),
+            // nama_team: data.get('nama_team'),
+            // nim: data.get('nim'),
+            // ketua: data.get('ketua'),
+            // email: data.get('email'),
+            // asal_universitas: data.get('asal_universitas'),
+            // kontak: data.get('kontak'),
+            // alamat: data.get('alamat'),
             nama_satu: data.get('nama_satu'),
             nim_satu: data.get('nim_satu'),
             email_satu: data.get('email_satu'),
@@ -71,14 +71,14 @@ const Kelompok = () => {
 
         try {
             const response = await axios.post(`https://backendspartafest-production.up.railway.app/lombakelompok`, {
-                bidang_lomba: data.get('lomba'),
-                nama_team: data.get('nama_team'),
-                nim: data.get('nim'),
-                ketua: data.get('ketua'),
-                email: data.get('email'),
-                asal_universitas: data.get('asal_universitas'),
-                kontak: data.get('kontak'),
-                alamat: data.get('alamat'),
+                // bidang_lomba: data.get('lomba'),
+                // nama_team: data.get('nama_team'),
+                // nim: data.get('nim'),
+                // ketua: data.get('ketua'),
+                // email: data.get('email'),
+                // asal_universitas: data.get('asal_universitas'),
+                // kontak: data.get('kontak'),
+                // alamat: data.get('alamat'),
                 nama_satu: data.get('nama_satu'),
                 nim_satu: data.get('nim_satu'),
                 email_satu: data.get('email_satu'),
@@ -87,7 +87,7 @@ const Kelompok = () => {
                 email_dua: data.get('email_dua'),
             });
 
-            Navigate('/berhasil')
+            // Navigate('/berhasil')
         } catch (error) {
             Navigate('/kelompok')
             alert('Register Gagal');
