@@ -54,7 +54,16 @@ const Beranda = () => {
         }
         verifikasi()
     }, []);
-
+    const handlePerorangan = async() => {
+        const response = await axios.post(`https://backendspartafest-production.up.railway.app/cekdaftar`,{
+            email: localStorage.getItem('email')
+        });
+        if(response.cek == "terdaftar") {
+            navigate('/berhasil')
+        } else {
+            navigate('/perorangan')
+        }
+    }
     const handleLogout = async () => {
         localStorage.removeItem('email');
         localStorage.removeItem('id');
@@ -102,7 +111,7 @@ const Beranda = () => {
 
                 <h2 id="text">SPARTA FEST 2022</h2>
                 <h4 id="text1">"DISCOVER THE WONDERLAND OF INDONESIA"</h4>
-                <button class="button-82-pushable" role="button" id="tomboldaftarpribadi" onClick={() => { navigate('/perorangan') }}>
+                <button class="button-82-pushable" role="button" id="tomboldaftarpribadi" onClick={handlePerorangan}>
                     <span class="button-82-shadow"></span>
                     <span class="button-82-edge"></span>
                     <span class="button-82-front text">
