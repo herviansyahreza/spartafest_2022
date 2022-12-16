@@ -28,7 +28,7 @@ const Perorangan = () => {
                 asal_universitas: data.get('asal_universitas'),
                 kontak: data.get('kontak'),
                 alamat: data.get('alamat'),
-            });
+            })
 
             Navigate('../berhasil')
         } catch (error) {
