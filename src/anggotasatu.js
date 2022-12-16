@@ -10,7 +10,7 @@ const AnggotaSatu = () => {
         const data = new FormData(event.currentTarget);
         console.log({
             nim_satu: data.get('nim'),
-            ketua_satu: data.get('nama_satu'),
+            nama_satu: data.get('nama_satu'),
             email_satu: data.get('email_satu'),
         });
 
