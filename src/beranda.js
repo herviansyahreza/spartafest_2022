@@ -56,7 +56,9 @@ const Beranda = () => {
     }, []);
 
     const handleLogout = async () => {
-        localStorage.removeItem('user');
+        localStorage.removeItem('email');
+        localStorage.removeItem('id');
+        localStorage.removeItem('name')
         localStorage.removeItem('email_ketua');
         localStorage.removeItem('email_satu');
         localStorage.removeItem('email_dua')
@@ -66,6 +68,7 @@ const Beranda = () => {
         }).then((_res) => {
             alert('Logout Success');
         })
+        localStorage.removeItem('token')
         window.location.href = './login';
     }
     return (
