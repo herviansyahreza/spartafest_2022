@@ -104,10 +104,6 @@ const Kelompok = () => {
                             <label className="text-left text-bold text-xl" for=""><b>Alamat</b></label><br />
                             <textarea className="w-full py-[15px] px-[10px] mb-[10px] bg-transparent border-b-[2px] text-black text-xl " name="alamat" placeholder="Alamat Lengkap" id="alamat" cols="20" rows="1" required></textarea><br />
 
-                            {/* <label className="text-left text-bold text-xl" for=""><b>Kartu Mahasiswa / Kartu Pelajar</b></label><br />
-                            <input className="w-full py-[15px] px-[10px] mb-[10px] bg-transparent border-b-[2px] text-black text-xl " type="file" name="ktm" id="ktm" required /><br /> */}
-
-
                             <h4 className="mt-[50px] mb-[20px] font-light text-3xl "><b>Data Anggota</b></h4>
                             <p className="mt-[10px] mb-[60px] font-light  text-xl ">Jika Anggota berjumlah lebih dari 3 orang, cukup mengisi Form diatas</p>
 
@@ -137,7 +133,8 @@ const Kelompok = () => {
                 </section>
 
 
-
+ {/* <label className="text-left text-bold text-xl" for=""><b>Kartu Mahasiswa / Kartu Pelajar</b></label><br />
+                            <input className="w-full py-[15px] px-[10px] mb-[10px] bg-transparent border-b-[2px] text-black text-xl " type="file" name="ktm" id="ktm" required /><br /> */}
 
             </div>
         </div>
