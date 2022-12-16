@@ -16,7 +16,6 @@ const Finish = () => {
             email_satu: localStorage.getItem('email_satu'),
             email_dua: localStorage.getItem('email_dua'),
         });
-        //bisa
         try {
             const response = await axios.post(`https://backendspartafest-production.up.railway.app/lombakelompok`, {
                 bidang_lomba: data.get('lomba'),
