@@ -10,18 +10,21 @@ const Finish = () => {
         const data = new FormData(event.currentTarget);
         console.log({
             bidang_lomba: data.get('lomba'),
-            nama_tim: data.get('nama_tim'),
-            kontak: data.get('kontak')
+            nama_tim: data.get('nama_team'),
+            kontak: data.get('kontak'),
+            ketua: localStorage.getItem('email_ketua'),
+            anggota_satu: localStorage.getItem('email_satu'),
+            anggota_dua: localStorage.getItem('email_dua'),
         });
 
         try {
             const response = await axios.post(`https://backendspartafest-production.up.railway.app/lombakelompok`, {
                 bidang_lomba: data.get('lomba'),
-                nama_tim: data.get('nama_tim'),
+                nama_tim: data.get('nama_team'),
                 kontak: data.get('kontak'),
                 ketua: localStorage.getItem('email_ketua'),
                 anggota_satu: localStorage.getItem('email_satu'),
-                anggota_dua: localStorage.getItem('email_dua')
+                anggota_dua: localStorage.getItem('email_dua'),
             });
             Navigate('/berhasil')
         } catch (error) {
