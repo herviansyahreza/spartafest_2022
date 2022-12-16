@@ -46,7 +46,7 @@ const Beranda = () => {
                 if (response.status == 200){
                     setIsLogin(true)
                 } else {
-                    navigate('/')
+                    navigate('/login')
                 }
             } catch (error) {
                 console.log(error)
@@ -69,7 +69,7 @@ const Beranda = () => {
             alert('Logout Success');
         })
         localStorage.removeItem('token')
-        window.location.href = './login';
+        window.location.href = './';
     }
     if(isLogin) {
         
