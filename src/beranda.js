@@ -90,7 +90,7 @@ const Beranda = () => {
                     </span>
                 </button>
 
-                <button class="button-82-pushable" role="button" id="tomboldaftarkelompok" onClick={() => { navigate('/kelompok') }}>
+                <button class="button-82-pushable" role="button" id="tomboldaftarkelompok" onClick={() => { navigate('/ketua') }}>
                     <span class="button-82-shadow"></span>
                     <span class="button-82-edge"></span>
                     <span class="button-82-front text">

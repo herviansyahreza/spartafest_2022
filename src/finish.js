@@ -25,7 +25,6 @@ const Finish = () => {
             });
             Navigate('/berhasil')
         } catch (error) {
-            Navigate('/kelompok')
             alert('Register Gagal');
         }
     };
