@@ -5,51 +5,51 @@ import axios from "axios";
 
 const Kelompok = () => {
     const Navigate = useNavigate();
+    // const handleSubmit = async (event) => {
+    //     event.preventDefault();
+    //     const data = new FormData(event.currentTarget);
+    //     console.log({
+    //         bidang_lomba: data.get('lomba'),
+    //         nama_team: data.get('nama_team'),
+    //         nim: data.get('nim'),
+    //         ketua: data.get('ketua'),
+    //         email: data.get('email'),
+    //         asal_universitas: data.get('asal_universitas'),
+    //         kontak: data.get('kontak'),
+    //         alamat: data.get('alamat'),
+    //         nama_satu: data.get('nama_satu'),
+    //         // nim_satu: data.get('nim_satu'),
+    //         // email_satu: data.get('email_satu'),
+    //         nama_dua: data.get('nama_dua'),
+    //         // nim_dua: data.get('nim_dua'),
+    //         // email_dua: data.get('email_dua'),
+    //     });
+
+    //     try {
+    //         const response = await axios.post(`https://backendspartafest-production.up.railway.app/lombakelompok`, {
+    //             bidang_lomba: data.get('lomba'),
+    //             nama_team: data.get('nama_team'),
+    //             nim: data.get('nim'),
+    //             ketua: data.get('ketua'),
+    //             email: data.get('email'),
+    //             asal_universitas: data.get('asal_universitas'),
+    //             kontak: data.get('kontak'),
+    //             alamat: data.get('alamat'),
+    //             nama_satu: data.get('nama_satu'),
+    //             // nim_satu: data.get('nim_satu'),
+    //             // email_satu: data.get('email_satu'),
+    //             nama_dua: data.get('nama_dua'),
+    //             // nim_dua: data.get('nim_dua'),
+    //             // email_dua: data.get('email_dua'),
+    //         });
+
+    //         Navigate('/berhasil')
+    //     } catch (error) {
+    //         Navigate('/kelompok')
+    //         alert('Register Gagal');
+    //     }
+    // };
     const handleSubmit = async (event) => {
-        event.preventDefault();
-        const data = new FormData(event.currentTarget);
-        console.log({
-            bidang_lomba: data.get('lomba'),
-            nama_team: data.get('nama_team'),
-            nim: data.get('nim'),
-            ketua: data.get('ketua'),
-            email: data.get('email'),
-            asal_universitas: data.get('asal_universitas'),
-            kontak: data.get('kontak'),
-            alamat: data.get('alamat'),
-            nama_satu: data.get('nama_satu'),
-            // nim_satu: data.get('nim_satu'),
-            // email_satu: data.get('email_satu'),
-            nama_dua: data.get('nama_dua'),
-            // nim_dua: data.get('nim_dua'),
-            // email_dua: data.get('email_dua'),
-        });
-
-        try {
-            const response = await axios.post(`https://backendspartafest-production.up.railway.app/lombakelompok`, {
-                bidang_lomba: data.get('lomba'),
-                nama_team: data.get('nama_team'),
-                nim: data.get('nim'),
-                ketua: data.get('ketua'),
-                email: data.get('email'),
-                asal_universitas: data.get('asal_universitas'),
-                kontak: data.get('kontak'),
-                alamat: data.get('alamat'),
-                nama_satu: data.get('nama_satu'),
-                // nim_satu: data.get('nim_satu'),
-                // email_satu: data.get('email_satu'),
-                nama_dua: data.get('nama_dua'),
-                // nim_dua: data.get('nim_dua'),
-                // email_dua: data.get('email_dua'),
-            });
-
-            Navigate('/berhasil')
-        } catch (error) {
-            Navigate('/kelompok')
-            alert('Register Gagal');
-        }
-    };
-    const handleSubmitAnggota = async (event) => {
         event.preventDefault();
         const data = new FormData(event.currentTarget);
         console.log({
@@ -70,7 +70,7 @@ const Kelompok = () => {
         });
 
         try {
-            const response = await axios.post(`https://backendspartafest-production.up.railway.app/lombakelompok`, {
+            const response = await axios.post(`https://backendspartafest-production.up.railway.app/insertanggotasatu`, {
                 // bidang_lomba: data.get('lomba'),
                 // nama_team: data.get('nama_team'),
                 // nim: data.get('nim'),
@@ -112,7 +112,7 @@ const Kelompok = () => {
             <div className="form m-[40px] w-2/3 p-[20px] border-2 rounded-3xl bg-cyan-400" action="">
                 <h1 className="text-center pl-[20px] text-4xl font-bold mb-[10px] mt-[30px]">Pendaftaran Sparta Fest 2022</h1>
                 <section class="content mt-[50px] m-[50px] p-[40px]">
-                    <form onSubmit={handleSubmit}>
+                    {/* <form onSubmit={handleSubmit}>
                         <div class="ketua">
                             <label className="text-left text-bold text-xl mb-[10px]" for=""><b>Bidang Perlombaan</b></label>
                             <select className="w-full py-[15px] px-[10px] mb-[10px] bg-transparent border-b-[2px] text-black text-xl " name="lomba" id="lomba" required>
@@ -148,8 +148,8 @@ const Kelompok = () => {
                             <textarea className="w-full py-[15px] px-[10px] mb-[10px] bg-transparent border-b-[2px] text-black text-xl " name="alamat" placeholder="Alamat Lengkap" id="alamat" cols="20" rows="1" required></textarea><br />
                             <button class="button-33 bg-green-400 rounded-[100px] cursor-pointer py-[7px] px-[20px] inline-block text-center decoration-none touch-manipulation w-[130px] h-[50px] hover:bg-green-500 mt-[30px] " type="submit">Kirimkan</button>    
                         </div>
-                    </form>
-                    <form onSubmit={handleSubmitAnggota}>
+                    </form> */}
+                    <form onSubmit={handleSubmit}>
                         <h4 className="mt-[50px] mb-[20px] font-light text-3xl "><b>Data Anggota</b></h4>
                         <p className="mt-[10px] mb-[60px] font-light  text-xl ">Jika Anggota berjumlah lebih dari 3 orang, cukup mengisi Form diatas</p>
 
