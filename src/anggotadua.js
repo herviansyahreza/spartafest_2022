@@ -10,14 +10,14 @@ const AnggotaDua = () => {
         const data = new FormData(event.currentTarget);
         console.log({
             nim_dua: data.get('nim_dua'),
-            ketua_dua: data.get('nama_dua'),
+            nama_dua: data.get('nama_dua'),
             email_dua: data.get('email_dua'),
         });
 
         try {
             const response = await axios.post(`https://backendspartafest-production.up.railway.app/insertanggotadua`, {
                 nim_dua: data.get('nim_dua'),
-                ketua_dua: data.get('nama_dua'),
+                nama_dua: data.get('nama_dua'),
                 email_dua: data.get('email_dua'),
             });
             localStorage.setItem('email_dua', data.get('email_dua'))
