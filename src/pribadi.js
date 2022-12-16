@@ -40,7 +40,7 @@ const Perorangan = () => {
             <div className="form m-[40px] w-2/3 p-[20px] border-2 rounded-3xl bg-cyan-400" action="">
                 <h1 className="text-center pl-[20px] text-4xl font-bold mb-[10px] mt-[30px]">Pendaftaran Sparta Fest 2022</h1>
                 <section class="content mt-[50px] m-[50px] p-[40px]">
-                    <from onSubmit={handleSubmit}>
+                    <form onSubmit={handleSubmit}>
                         <div class="ketua" >
                             <label className="text-left text-bold text-xl mb-[10px]" for=""><b>Bidang Perlombaan</b></label>
                             <select className="w-full py-[15px] px-[10px] mb-[10px] bg-transparent border-b-[2px] text-black text-xl " name="lomba" id="lomba" required>
@@ -75,7 +75,7 @@ const Perorangan = () => {
                             
                         </div>
                             
-                    </from>
+                    </form>
                 </section>
             </div>
         </div>
