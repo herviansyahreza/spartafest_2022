@@ -20,7 +20,7 @@ const Finish = () => {
         try {
             const response = await axios.post(`https://backendspartafest-production.up.railway.app/lombakelompok`, {
                 bidang_lomba: data.get('lomba'),
-                nama_tim: data.get('nama_team'),
+                nama_tim: data.get('nama_tim'),
                 kontak: data.get('kontak'),
                 email_ketua: localStorage.getItem('email_ketua'),
                 email_satu: localStorage.getItem('email_satu'),
@@ -56,8 +56,7 @@ const Finish = () => {
                             <input className="w-full py-[15px] px-[10px] mb-[30px] bg-transparent border-b-[2px] text-white text-l rounded-[20px]" type="text" placeholder="" name="kontak" id="kontak" required /><br />
                             <button
                 className="action w-44 border p-2 cursor-pointer  bg-green-800 hover:bg-green-100 text-white hover:text-black outline-none border-b-[4px] border-l-[4px] border-r-[0px] rounded-[20px] translate-x-[70px] translate-y-[25px] text-[20px] "
-                type="submit"
-              >
+                type="submit">
                 Kirim
               </button>     </div>
                     </form>         
