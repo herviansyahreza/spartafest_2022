@@ -65,6 +65,17 @@ const Beranda = () => {
             navigate('/perorangan')
         }
     }
+    const handleKelompok = async() => {
+        const response = await axios.post(`https://backendspartafest-production.up.railway.app/cekdaftar`,{
+            email: localStorage.getItem('email')
+        });
+        console.log(response)
+        if(response.data.cek == "terdaftar") {
+            navigate('/berhasil')
+        } else {
+            navigate('/ketua')
+        }
+    }
     const handleLogout = async () => {
         localStorage.removeItem('email');
         localStorage.removeItem('id');
@@ -120,7 +131,7 @@ const Beranda = () => {
                     </span>
                 </button>
 
-                <button class="button-82-pushable" role="button" id="tomboldaftarkelompok" onClick={() => { navigate('/ketua') }}>
+                <button class="button-82-pushable" role="button" id="tomboldaftarkelompok" onClick={handleKelompok}>
                     <span class="button-82-shadow"></span>
                     <span class="button-82-edge"></span>
                     <span class="button-82-front text">

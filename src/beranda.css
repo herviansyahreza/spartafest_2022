@@ -84,6 +84,10 @@
   transform: translate(-250px, 250px);
 }
 
+#tombolfirst{
+  transform: translateY(40px);
+}
+
 .button-82-pushable {
     position: relative;
     border: none;
