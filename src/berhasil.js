@@ -1,8 +1,9 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
+
 const Berhasil = () => {
-    const navigate = useNavigate();
+    const Navigate = useNavigate();
     return (
         <body className="bg-[url('bg.png')]  h-screen m-[0px] p-[50px] flex w-full justify-center align-center">
             <div className="tulisan">
