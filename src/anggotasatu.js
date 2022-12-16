@@ -28,19 +28,19 @@ const AnggotaSatu = () => {
         }
     };
     return (
-        <div className="kelompok p-0 m-0 outline-none box-border h-full w-full mb-[30px] flex justify-center align-center bg-emerald-900">
-            <div className="form m-[40px] w-2/3 p-[20px] border-2 rounded-3xl bg-cyan-400" action="">
-                <h1 className="text-center pl-[20px] text-4xl font-bold mb-[10px] mt-[30px]">Pendaftaran Sparta Fest 2022</h1>
-                <section class="content mt-[50px] m-[50px] p-[40px]">
+        <div className="kelompok bg-gradient-to-r from-emerald-900 to-emerald-100 h-screen overflow-hidden font-sans ">
+            <div className="form bg-transparent  w-[490px] h-[650px] my-16 mx-auto flex flex-col rounded-xl border-emerald-900 shadow-xl" action="">
+                <h1 className="mt-4 pr-[35px] pl-[35px] font-bold align-center flex justify-center text-7xl text-white">Registrasi</h1>
+                <section class="content mt-[30px] m-[50px] p-[40px]">
                     <form onSubmit={handleSubmit}>
                         <div class="ketua">
-                        <label className="text-left text-bold text-xl" for=""><b>Nama Anggota 1</b></label><br />
-                        <input className="w-full py-[15px] px-[10px] mb-[10px] bg-transparent border-b-[2px] text-black text-xl " type="text" placeholder="Nama Anggota 1" name="nama_satu" id="nama_satu" /><br />
-                        <label className="text-left text-bold text-xl" for=""><b>Nomor Induk Mahasiswa</b></label><br />
-                        <input className="w-full py-[15px] px-[10px] mb-[10px] bg-transparent border-b-[2px] text-black text-xl " type="number" placeholder="NIM / KTM" name="nim_satu" id="nim_satu" /><br />
-                        <label className="text-left text-bold text-xl" for=""><b>Email</b></label><br />
-                        <input className="w-full py-[15px] px-[10px] mb-[10px] bg-transparent border-b-[2px] text-black text-xl " type="email" placeholder="Email Anggota 1" name="email_satu" id="email_satu" /><br />
-                            <button class="button-33 bg-green-400 rounded-[100px] cursor-pointer py-[7px] px-[20px] inline-block text-center decoration-none touch-manipulation w-[130px] h-[50px] hover:bg-green-500 mt-[30px] " type="submit">Kirimkan</button>  
+                        <label className="text-left text-white text-[15px]" for=""><b>Nama Anggota 1</b></label><br />
+                        <input className="w-full py-[15px] px-[10px] mb-[60px] bg-transparent border-b-[2px] text-white text-l  rounded-[20px]" type="text" placeholder="" name="nama_satu" id="nama_satu" /><br />
+                        <label className="text-left text-white text-[15px]" for=""><b>Nomor Induk Mahasiswa</b></label><br />
+                        <input className="w-full py-[15px] px-[10px] mb-[60px] bg-transparent border-b-[2px] text-white text-l  rounded-[20px]" type="text" placeholder="" name="nim_satu" id="nim_satu" /><br />
+                        <label className="text-left text-white text-[15px]" for=""><b>Email</b></label><br />
+                        <input className="w-full py-[15px] px-[10px] mb-[0px] bg-transparent border-b-[2px] text-white text-l  rounded-[20px]" type="email" placeholder="" name="email_satu" id="email_satu" /><br />
+                        <button class="w-[65px] border cursor-pointer bg-transparent hover:bg-white hover:text-zinc-400 text-white outline-none border-b-[4px] border-l-[4px] border-r-[0px] rounded-[20px] translate-x-[450px] scale-[1] translate-y-[-220px] -rotate-90 text-[40px]" type="submit">V</button>  
                         </div>
                     </form>         
                 </section>

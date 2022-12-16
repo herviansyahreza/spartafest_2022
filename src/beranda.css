@@ -75,10 +75,13 @@
 /* button */
 
 #tomboldaftarkelompok{
-  transform: translate(20px, 170px);
+  transform: translate(100px, 170px);
 }
 #tomboldaftarpribadi{
-  transform: translate(-70px, 170px);
+  transform: translate(10px, 170px);
+}
+#tombolkeluar{
+  transform: translate(-250px, 250px);
 }
 
 .button-82-pushable {
