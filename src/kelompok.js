@@ -86,7 +86,7 @@ const Kelompok = () => {
                 nim_dua: data.get('nim_dua'),
                 email_dua: data.get('email_dua'),
             });
-
+            alert("anggota terupdate")
             // Navigate('/berhasil')
         } catch (error) {
             Navigate('/kelompok')
