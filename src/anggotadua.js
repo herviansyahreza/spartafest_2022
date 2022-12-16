@@ -35,11 +35,11 @@ const AnggotaDua = () => {
                     <form onSubmit={handleSubmit}>
                         <div class="ketua">
                         <label className="text-left text-bold text-xl" for=""><b>Nama Anggota 2</b></label><br />
-                        <input className="w-full py-[15px] px-[10px] mb-[10px] bg-transparent border-b-[2px] text-black text-xl " type="text" placeholder="Nama Anggota 1" name="nama_dua" id="nama_dua" /><br />
+                        <input className="w-full py-[15px] px-[10px] mb-[10px] bg-transparent border-b-[2px] text-black text-xl " type="text" placeholder="Nama Anggota 2" name="nama_dua" id="nama_dua" /><br />
                         <label className="text-left text-bold text-xl" for=""><b>Nomor Induk Mahasiswa</b></label><br />
-                        <input className="w-full py-[15px] px-[10px] mb-[10px] bg-transparent border-b-[2px] text-black text-xl " type="number" placeholder="NIM / KTM" name="nim_dua" id="nim_dua" /><br />
+                        <input className="w-full py-[15px] px-[10px] mb-[10px] bg-transparent border-b-[2px] text-black text-xl " type="number" placeholder="NIM" name="nim_dua" id="nim_dua" /><br />
                         <label className="text-left text-bold text-xl" for=""><b>Email</b></label><br />
-                        <input className="w-full py-[15px] px-[10px] mb-[10px] bg-transparent border-b-[2px] text-black text-xl " type="email" placeholder="Email Anggota 1" name="email_dua" id="email_dua" /><br />
+                        <input className="w-full py-[15px] px-[10px] mb-[10px] bg-transparent border-b-[2px] text-black text-xl " type="email" placeholder="Email Anggota 2" name="email_dua" id="email_dua" /><br />
                             <button class="button-33 bg-green-400 rounded-[100px] cursor-pointer py-[7px] px-[20px] inline-block text-center decoration-none touch-manipulation w-[130px] h-[50px] hover:bg-green-500 mt-[30px] " type="submit">Kirimkan</button>  
                         </div>
                     </form>         
