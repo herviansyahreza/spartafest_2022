@@ -90,7 +90,7 @@ const Beranda = () => {
             alert('Logout Success');
         })
         localStorage.removeItem('token')
-        window.location.href = './';
+        window.location.href = '/';
     }
     if(isLogin) {
         
