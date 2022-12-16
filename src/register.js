@@ -11,15 +11,16 @@ const Register = () => {
         const data = new FormData(event.currentTarget);
         console.log({
           username: data.get('username'),
-          pass: data.get('password'),
+          password: data.get('password'),
           email: data.get('email'),
         });
 
     try {
         const response = await axios.post('https://backendspartafest-production.up.railway.app/register' , {
             username: data.get('username'),
+            password: data.get('password'),
             email: data.get('email'),
-            password: data.get('password')
+            
         })
 
         Navigate('../login')
